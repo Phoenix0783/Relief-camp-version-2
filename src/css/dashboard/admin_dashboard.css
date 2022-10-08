@@ -1,0 +1,42 @@
+:root {
+    /* Primary Colors*/
+    --Midnight-Green-Eagle-Green: #004e64;
+
+    /* Secondary Colors */
+    --Cerulean-Crayola: #00a5cf;
+    --Persian-Green: #25a18e;
+    
+    /* Tertiary Colors */
+    --black-title-text: #202020;
+    --grey-body-text: #535353;
+    --Aquamarine: #9fffcb;
+    --Light-Green: #7ae582;
+    --section-bg-grey: #fafafa;
+    --section-bg-blue: rgba(0, 165, 207, 0.1)
+}
+nav {
+    background-color: #004a64;
+    color: white;
+}
+main .group {
+    background-color: var(--section-bg-blue);
+    color: var(--black-title-text);
+}
+
+#sidebar {
+    left: -100%;
+    animation: showMenu 500ms ease-in-out both;
+}
+
+@keyframes showMenu {
+    to {
+        left: 0;
+    }
+}
+tr {
+    cursor: pointer;
+}
+tr:hover {
+    background-color: rgba(0, 165, 207, 0.1);
+}
+
